@@ -31,6 +31,10 @@ import GeneralItemsDataService from "../services/general.service";
 // }
 
 //export default function Inventory({ cars }) {
+    /*
+     * In summary, this code fetches data from an API using GeneralItemsDataService.getAll(), 
+     * updates the cars state with the fetched data, and logs the API response or any errors to the console.
+     */
     export default function Inventory() {
     const [cars, setCars] = useState([]);
     useEffect(() => {
@@ -43,11 +47,13 @@ import GeneralItemsDataService from "../services/general.service";
             console.error('Error fetching data:', error);
           }
         };
-    
+        //fetchData is called immediately after its definition, initiating the data fetching process when the component mounts.
         fetchData();
+        //The empty array [] as the second argument means this effect will only run once, similar to componentDidMount in class components
       }, []);
     return (
         <>
+        <div className='inventory'>
             {/* <title>Responsive Card Design using HTML & CSS</title> */}
             <meta charSet="utf-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -67,6 +73,7 @@ import GeneralItemsDataService from "../services/general.service";
                         </div>
                     </div>
                 ))}
+            </div>
             </div>
         </>
     );

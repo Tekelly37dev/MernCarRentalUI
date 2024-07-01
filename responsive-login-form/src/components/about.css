@@ -1,12 +1,14 @@
-
+.about-info{
+  height: 70vh;
+}
   
-  .bgimg {
-    background-image: url('./images/Lobby_Exterior.png');
-    height: 100%;
-    background-position: center;
-    color: white;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 25px;
-  }
+/* .bgimg {
+  background-image: url('./images/Lobby_Exterior.png');
+  height: 100%;
+  background-position: center;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  } */
   
  

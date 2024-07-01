@@ -6,12 +6,14 @@ font-family: sans-serif;
 }
 body{
     background-color: #f0f0f0;
+   
 }
 .card-container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 100px;
+    /* height: 70vh; */
 } 
 .card{
     width: 325px;
@@ -46,4 +48,7 @@ body{
     margin-top: 16px;
     text-align: center;  
     color:#fff;
+}
+.inventory{
+    /* height: 100vh; */
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 function SliderContent({ activeIndex, sliderImage }) {
   return (
-    <section>
+    <section className="slideshoe-section">
       {sliderImage.map((slide, index) => (
         <div
           key={index}

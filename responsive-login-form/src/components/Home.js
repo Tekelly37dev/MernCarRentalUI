@@ -7,7 +7,9 @@ import "./home.css"
 
 const Home = () => (
   <div>
+    <div className="slider-main">
     <Slider />
+    </div>
     <body className="homebody">
     <section className="grid1">
       <div className="img1" />
@@ -23,6 +25,9 @@ const Home = () => (
             </NavLink>
         </div>
       </div>
+  </section>
+  <section className="section-two">
+    placeholder
   </section>
   </body>
   </div>
