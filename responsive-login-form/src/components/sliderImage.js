@@ -31,11 +31,11 @@ export default [
     description: "",
     urls: Fifth
   },
-  {
-    title: "",
-    description: "",
-    urls: Sixth,
-  }
+  // {
+  //   title: "",
+  //   description: "",
+  //   urls: Sixth,
+  // }
   // {
   //   title: "Seventh Slide",
   //   description: "This is the Seventh slider Image of our carousel",
