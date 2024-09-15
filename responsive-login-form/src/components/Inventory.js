@@ -1,5 +1,6 @@
 
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import "./inventory.css"
 import SearchInventory from "./SearchInventory"; 
 import GeneralItemsDataService from "../services/general.service";
@@ -67,9 +68,12 @@ import GeneralItemsDataService from "../services/general.service";
                         <div className="card-content">
                             <h3>{car.name}</h3>
                             <p>{car.description}</p>
-                            <a href={car.link} className="btn">
+                            <Link to={`${car.link}/${car.id}`} className="btn">
+                                    Read More
+                                </Link>
+                            {/* <a href={car.link} className="btn">
                                 Read More
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 ))}
