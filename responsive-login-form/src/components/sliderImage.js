@@ -3,7 +3,7 @@ import Second from "../assets/Second.jpg";
 import Third from "../assets/Third.jpg";
 import Fourth from "../assets/Fourth.jpg";
 import Fifth from "../assets/Fifth.jpg";
-import Sixth from "../assets/Sixth.jpg";
+import Sixth from "../assets/C8.jpeg";
 
 export default [
   {
@@ -30,7 +30,12 @@ export default [
     title: "",
     description: "",
     urls: Fifth
-  },
+  }
+  // {
+  //   title: "",
+  //   description: "",
+  //   urls: Sixth
+  // },
   // {
   //   title: "",
   //   description: "",

@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Inventory from "./components/Inventory"; 
 import Footer from "./components/Footer"; 
 import SearchResults from "./components/SearchResults"; 
+import DetailsPage from "./components/DetailsPage"; 
 import "./App.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram, faLinkedin, faYoutube} from '@fortawesome/free-brands-svg-icons';
@@ -36,6 +37,7 @@ function App() {
               {/* <Route path='/Inventory' element={<Inventory cars = {cars}/>} /> */}
               <Route path='/Inventory' element={<Inventory/>} />
               <Route path='/SearchResults' element={<SearchResults/>} />
+              <Route path="/DetailsPage/:id" element={<DetailsPage />} />
           </Routes>
           <footer>
             

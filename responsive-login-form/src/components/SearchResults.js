@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import "./inventory.css"
 import SearchInventory from "./SearchInventory"; 
@@ -25,9 +26,13 @@ const Inventory = () => {
                             <div className="card-content">
                                 <h3>{results.name}</h3>
                                 <p>{results.description}</p>
-                                <a href={results.link} className="btn">
+                                <Link to={`${results.link}/${results.id}`} className="btn">
                                     Read More
-                                </a>
+                                </Link>
+
+                                {/* <a href={results.link} className="btn">
+                                    Read More
+                                </a> */}
                             </div>
                         </div>
                     ))}
