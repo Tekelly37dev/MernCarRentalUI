@@ -31,7 +31,7 @@ const Home = () => (
         {/* <section className="section-two">
           placeholder
         </section> */}
-      <section>
+      <section id= "homeTileSection">
       <HomeTiles/>
       </section>
    </body>
