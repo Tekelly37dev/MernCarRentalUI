@@ -56,7 +56,7 @@
     cursor: pointer;
     border: none;
     outline: none;
-    font-size: 18px;
+    font-size:22px;
     font-weight: 600;
     color: #333; 
     display: flex;
@@ -91,13 +91,14 @@
     overflow: hidden;
     /* transition: max-height 0.5s ease, padding-bottom 0.5s ease; */
     padding: 0 24px;
+    font-size: 14px;
     background-color: #ffffff; 
   }
   
   .accordion-content p {
     /* padding: 16px 0; */
-    color: black; 
-    font-size: 16px;
+    color: rgb(127, 127, 127); 
+    font-size: 14px;
     line-height: 1.6;
   }
   
@@ -111,6 +112,17 @@
   
   .accordion-item.active {
     /* background-color: #f0f0f0;  */
+  }
+  .content-card{
+    padding-top: 0px;
+    padding-left: 100px;
+    padding-right: 10px;
+    margin-Bottom: 2px;
+    margin-left:25px;
+    margin-right: 25px;
+    background-Color: #f0f0f0; 
+    width: '95%';
+    height:'100%';
   }
 /*To style the list as left-aligned and divide it into two columns only if `isList` is `true`, you can add inline styling with CSS grid properties. Here’s how to do it:
 
