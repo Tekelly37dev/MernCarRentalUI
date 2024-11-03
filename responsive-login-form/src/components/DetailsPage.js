@@ -2,6 +2,7 @@
 import { useParams } from 'react-router-dom';
 import "./detailspage.css"
 import Slider from "./Slider";
+import Accordion from"./Accordion";
 
 const DetailsPage = () => {
     const { id } = useParams(); // Access the 'id' from the URL
@@ -10,7 +11,10 @@ const DetailsPage = () => {
     return (
         <>
                     {/* <h1>Details Page for ID: {id}</h1> */}
-            <div className="row">
+            <div className="row" style={{
+                marginBottom: '20px',
+
+              }}>
                 <div className="col-md-5 col-lg-3">
                     <div className="list-view">
                         <h3 className="font-30 b-600 mb-3 car-name">2023 BMW M3</h3>
@@ -51,18 +55,17 @@ const DetailsPage = () => {
                         </li>
                         </ul>
                     </div>
+                   
                 </div>
                 <div className="col-md-7 col-lg-9 vehicleDesktop">
                     {/* Place slideshow/image slider show of cars here  */}
                     <div className="slider-main">
                     <Slider />
                     </div>
+                    <Accordion/>
                 </div>
             </div>
-            <div className="row">
-                
-                
-            </div>
+            
 
     </>
     );
